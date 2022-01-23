@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Source/Scripts/Board.cs" type="Script" id=1]
+[ext_resource path="res://Source/Scripts/Camera2D.cs" type="Script" id=2]
+
+[node name="Board" type="Node2D"]
+script = ExtResource( 1 )
+LightColor = Color( 0.952941, 0.776471, 0.552941, 1 )
+DarkColor = Color( 0.807843, 0.494118, 0.294118, 1 )
+HighLightMoveColor = Color( 0, 0.25098, 1, 0.513726 )
+PickedUpPieceColor = Color( 0.223529, 0.301961, 0.835294, 1 )
+LastMoveColor = Color( 0.396078, 0.937255, 0.352941, 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+rotating = true
+current = true
+zoom = Vector2( 4, 4 )
+script = ExtResource( 2 )

@@ -1,0 +1,10 @@
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\bin\Debug\Chess.deps.json
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\bin\Debug\Chess.dll
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\bin\Debug\Chess.pdb
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.csproj.AssemblyReference.cache
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.AssemblyInfoInputs.cache
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.AssemblyInfo.cs
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.csproj.CoreCompileInputs.cache
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.dll
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.pdb
+D:\DokumentyITD\coding_stuff\Chess\.mono\temp\obj\Debug\Chess.GeneratedMSBuildEditorConfig.editorconfig
