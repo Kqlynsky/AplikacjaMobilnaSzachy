@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Imported/Perfect DOS VGA 437 Win.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Source/Scripts/Menu.cs" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -72.0
+margin_right = 72.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+text = "Menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -86.9797
+margin_top = -37.2449
+margin_right = 87.0203
+margin_bottom = 32.7551
+custom_fonts/font = SubResource( 2 )
+text = "Zagraj"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogoutButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.064
+margin_top = 58.6566
+margin_right = 100.936
+margin_bottom = 128.657
+custom_fonts/font = SubResource( 2 )
+text = "Wyloguj"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="button_down" from="PlayButton" to="." method="_on_PlayButton_button_down"]
+[connection signal="pressed" from="LogoutButton" to="." method="_on_LogoutButton_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

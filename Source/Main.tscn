@@ -1,70 +1,29 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Source/Board.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Imported/Perfect DOS VGA 437 Win.ttf" type="DynamicFontData" id=2]
 
-[sub_resource type="Shader" id=1]
-code = "shader_type canvas_item;
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
 
-uniform int iterations = 100;
-uniform float diverge_limit = 100.0f;
-uniform float scale = 8;
-uniform vec2 offset = vec2(0.0,0.0);
-
-vec2 Square_Imaginary(vec2 number){
-	return vec2 ( (number.x * number.x ) - (number.y * number.y), (2.0 * number.x * number.y));
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
 }
-
-void fragment(){
-	
-	vec2 remaped_uv = vec2((UV.x * scale) -scale/2.0 + offset.x, (UV.y * scale) -scale/2.0 + offset.y); // (-2, 2)
-	
-	float x = remaped_uv.x;
-	float y = remaped_uv.y;
-	
-	x += offset.x;
-	y += offset.y;
-	
-	float  alpha = 1.0;
-
-	vec2 number1 = vec2(x,y);
-	vec2 number2 = vec2(x,y);
-	
-	float r = 1.0;
-	float g = 1.0;
-	float b = 1.0;
-	
-	for(int i = 0; i < iterations; i++)
-	{
-		number1 =  Square_Imaginary(number1)   - vec2(0.0,0.0);//vec2(cos(TIME),sin(TIME));
-		number2 =  Square_Imaginary(number2) - vec2(0.0,sin(0.9* cos(TIME)/1.2)); //vec2(sin(TIME*1.1),cos(TIME));
-		
-		b = sin(TIME );
-		r = cos(TIME);
-		g = sin(1.0/TIME);
-		//number += vec2(sin(TIME),cos(TIME));
-		number1 *= number2 * -0.000000001;
-	}
-	
-	//number.x *= 982.0 * sin(TIME);
-	//number.y *= 2.0 * cos(TIME);
-	
-	if(number1.x * number1.x + number1.y*number1.y < diverge_limit)
-	{
-		alpha = 0.0;
-	}
-	
-	COLOR = vec4(r,g,b,alpha);
-}"
-
-[sub_resource type="ShaderMaterial" id=2]
-shader = SubResource( 1 )
-shader_param/iterations = 100
-shader_param/diverge_limit = 100.0
-shader_param/scale = 8.0
-shader_param/offset = Vector2( 0, 0 )
-
-[node name="Main" type="Node2D"]
-material = SubResource( 2 )
 
 [node name="Board" parent="." instance=ExtResource( 1 )]
 use_parent_material = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 304.437
+margin_top = 246.166
+margin_right = 748.437
+margin_bottom = 316.166
+custom_fonts/font = SubResource( 1 )
+text = "Back to menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}

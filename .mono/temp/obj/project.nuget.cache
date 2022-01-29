@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IDGSA8DZnD7LMuLCtgqH79ginJToCmfoAUazPTBOYYQZ16dd00pJ90zbXsIarKBAjpI6/WJWmI3MGo0yvGXOww==",
+  "dgSpecHash": "O5o7IddjSrRg6/szR60ESp0emsVvY2XSUXppBFUa1ARcN1kDGKj96Hxp4DePcN1QT65r5ofp5gn+6ciJeOsINg==",
   "success": true,
-  "projectFilePath": "D:\\DokumentyITD\\coding_stuff\\Chess\\Chess.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jkukl\\Downloads\\Chess\\Chess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jkukl\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DokumentyITD\\coding_stuff\\Chess\\Chess.csproj": {}
+    "C:\\Users\\jkukl\\Downloads\\Chess\\Chess.csproj": {}
   },
   "projects": {
-    "D:\\DokumentyITD\\coding_stuff\\Chess\\Chess.csproj": {
+    "C:\\Users\\jkukl\\Downloads\\Chess\\Chess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DokumentyITD\\coding_stuff\\Chess\\Chess.csproj",
+        "projectUniqueName": "C:\\Users\\jkukl\\Downloads\\Chess\\Chess.csproj",
         "projectName": "Chess",
-        "projectPath": "D:\\DokumentyITD\\coding_stuff\\Chess\\Chess.csproj",
-        "packagesPath": "C:\\Users\\Hartkorcraft\\.nuget\\packages\\",
-        "outputPath": "D:\\DokumentyITD\\coding_stuff\\Chess\\.mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\jkukl\\Downloads\\Chess\\Chess.csproj",
+        "packagesPath": "C:\\Users\\jkukl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jkukl\\Downloads\\Chess\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hartkorcraft\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jkukl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\DokumentyITD\\coding_stuff\\NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +37,12 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
