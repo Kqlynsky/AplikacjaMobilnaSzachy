@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Game : Control
+public class Game : Node2D
 {
 
     private void _on_Button_button_down()
